@@ -12,7 +12,7 @@ const pool = new Pool({
     database: "cyf_hotels",
 });
 
-app.get("/customers/:customerId", (req, res) => {
+app.get("/users/:customerId", (req, res) => {
     const customerId = req.params.customerId;
     const query = `SELECT * FROM customers WHERE id = $1;`;
 
